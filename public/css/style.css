@@ -180,4 +180,52 @@ body {
   color: var(--link-color);
 }
 
-/* TOP BANNER LEFT */
+/* BLOG */
+.blog-section {
+  margin-top: 100px;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 15px;
+}
+
+.blog-card {
+  padding: 20px 25px;
+  background: rgba(255, 255, 255, 0.04); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+
+  text-align: right;
+  position: relative;
+  transition: all 0.5s ease; /* Smooth transition */
+}
+
+.blog-card h3 {
+  font-size: 19px;
+  font-family: "black-text";
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 13px;
+  text-align: justify;
+  line-height: 2;
+  margin-bottom: 5px;
+}
+
+.readmore-blog {
+  color: var(--text-color);
+  font-size: 12px;
+  background-color: var(--bg-color);
+  padding: 4px 7px;
+  border-radius: 3px;
+  transition: all ease-in-out 0.2s;
+}
+
+.readmore-blog:hover {
+  background-color: var(--primary-color);
+}
