@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: rgb(16, 16, 24);
+  --text-color: #ffffff;
+  --primary-color: rgb(43, 40, 172);
+  --link-color: rgb(33, 90, 214);
+  --secondary-color: rgb(255, 174, 0);
+}
+
+@font-face {
+  font-family: "light-text";
+  src: url("../fonts/IRANSansWeb\(FaNum\)_Light.ttf");
+}
+
+@font-face {
+  font-family: "regular-text";
+  src: url("../fonts/IRANSansWeb.ttf");
+}
+
+@font-face {
+  font-family: "bold-text";
+  src: url("../fonts/IRANSansWeb_Bold.ttf");
+}
+
+@font-face {
+  font-family: "black-text";
+  src: url("../fonts/IRANSansWeb_Black.ttf");
+}
+
+@font-face {
+  font-family: "funum-regular";
+  src: url("../fonts/IRANSansWeb\(FaNum\).ttf");
+}
+
+@font-face {
+  font-family: "funum-bold";
+  src: url("../fonts/IRANSansWeb\(FaNum\).ttf");
+}
+
+@font-face {
+  font-family: "funum-black";
+  src: url("../fonts/IRANSansWeb\(FaNum\)_Black.ttf");
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "regular-text";
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+  padding: 10px 10%;
+}
+
+.header .logo a {
+  color: var(--text-color);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo a i {
+  font-size: 20px;
+}
+
+.header .navbar-ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .navbar-ul li a {
+  font-family: "bold-text";
+  font-size: 13px;
+  color: var(--text-color);
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.header .navbar-ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.main-content {
+  padding: 70px 8%;
+  /* background-color: green; */
+}
+
+/* TOP-BANNER */
+
+.top-banner {
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(
+    closest-side,
+    rgba(47, 0, 255, 0.21),
+    rgb(16, 16, 24)
+  );
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+/* TOP-BANNER @RIGHT */
+.top-banner .top-banner-right {
+  width: 100%;
+  /* background-color: red; */
+}
+
+.top-banner .top-banner-right img {
+  width: 300px;
+}
+
+.top-banner .top-banner-right h1 {
+  font-family: "black-text";
+  font-size: 28px;
+}
+
+.top-banner .top-banner-right p {
+  font-family: "light-text";
+  font-size: 15px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.top-banner .top-banner-right .skills {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.top-banner .top-banner-right .skills .skills-card i {
+  font-size: 28px;
+}
+
+.top-banner .top-banner-right .skills .skills-card:first-child:hover {
+  color: rgb(161, 76, 240);
+}
+
+.top-banner .top-banner-right .skills .skills-card:nth-child(2):hover {
+  color: tomato;
+}
+
+.top-banner .top-banner-right .skills .skills-card:nth-child(3):hover {
+  color: greenyellow;
+}
+.top-banner .top-banner-right .skills .skills-card:nth-child(4):hover {
+  color: yellow;
+}
+.top-banner .top-banner-right .skills .skills-card:nth-child(5):hover {
+  color: skyblue;
+}
+.top-banner .top-banner-right .skills .skills-card:nth-child(6):hover {
+  color: rgb(49, 194, 49);
+}
+
+.top-banner .top-banner-right .skills .skills-card:last-child:hover {
+  color: var(--link-color);
+}
+
+/* TOP BANNER LEFT */
+
+.top-banner-left {
+  /* background-color: rgb(68, 84, 230); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
+
+.card {
+  padding: 20px 25px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin: 50px auto;
+  text-align: center;
+  position: relative; /* Required for pseudo-element positioning */
+  transition: all 0.5s ease; /* Smooth transition */
+}
+
+/* DESCRIPTION */
+
+.top-banner-left-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.top-banner-left-desc h2 {
+  font-family: "black-text";
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.top-banner-left-desc p {
+  font-family: "regular-text";
+  font-size: 13px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.top-banner-left-blog {
+  width: 100%;
+}
+
+/* BLOG CONTENT */
+
+.top-banner-left-blog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: right;
+}
+
+.top-banner-left-blog h2 {
+  font-family: "black-text";
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.top-banner-left-blog ul {
+  padding-right: 20px;
+}
+.top-banner-left-blog ul li {
+  list-style: circle;
+}
+
+.top-banner-left-blog ul li a {
+  color: var(--text-color);
+  font-size: 13px;
+  text-decoration: underline;
+}
